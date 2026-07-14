@@ -36,6 +36,7 @@ function renderizarLista() {//esta função pega a lista e mostra na tela
 
     if (tarefa.concluida) {//se a tarefa for concluida
       texto.classList.add('concluida');//adiciona uma class que está no css
+    }
 
     const btnConcluir = document.createElement('button');//botão de concluir e funções
     btnConcluir.className = 'btn btn-concluir';//adiciona class
@@ -66,11 +67,11 @@ function renderizarLista() {//esta função pega a lista e mostra na tela
     item.appendChild(btnConcluir);//adiciona o botão de concluir
     item.appendChild(btnDeletar);//adicona o botão de deletar
     listaTarefas.appendChild(item);//pega o item e adiciona na lista de tarefa
-  };
+  });
 }
 
 function adicionarTarefa(texto) {
-  const textoLimpo = texto.trim();//limpa o texto
+  const textoLimpo = texto.trim(); //limpa o texto
 
   if (textoLimpo === '') {//verifica se tem algo digitado
     return;//se não tiver para aqui a funçao
@@ -82,7 +83,7 @@ function adicionarTarefa(texto) {
   });
 
   renderizarLista();//atualiza a lista na exibição
-}
+};
 /*
 a ! exclamação inverte a informação = QUANDO BOOLEAN
 então a tarefe concluida com false vira true, E O INVERSO
