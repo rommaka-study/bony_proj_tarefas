@@ -109,8 +109,8 @@ function deletarTarefa(indice) {
 
 formTarefa.addEventListener('submit', function (evento) {//quando o form é enviado
   evento.preventDefault();//pára o evento principal
-  adicionarTarefa(inputTarefa.value);//executa a função adicionar tarefa
-  inputTarefa.value = '';//limpa o campo
+  adicionarTarefa(inputTarefa.value); //executa a função adicionar tarefa
+  inputTarefa.value = '' ;//limpa o campo
   inputTarefa.focus();//foca para uma nova informação
 });
 
