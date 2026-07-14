@@ -66,7 +66,7 @@ function renderizarLista() {//esta função pega a lista e mostra na tela
     item.appendChild(btnConcluir);//adiciona o botão de concluir
     item.appendChild(btnDeletar);//adicona o botão de deletar
     listaTarefas.appendChild(item);//pega o item e adiciona na lista de tarefa
-  });
+  };
 }
 
 function adicionarTarefa(texto) {
